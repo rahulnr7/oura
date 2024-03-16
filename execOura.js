@@ -1,16 +1,15 @@
-const { spawn } = require("child_process");
-const fs = require("fs");
-const path = require("path");
+import { spawn } from "child_process"
+import  fs from "fs"
 
 // Sample Oura command to execute
 // 'oura daemon --config daemon.toml --cursor 116956876,2760ee4207c51344154116cb465138a99eb7214cd8c2fdf1486cd81994ce50e0'
 
 //replace Param1
-const parm1 = "116956876";
+const parm1 = "118995024";
 
 //replace param2
 const parm2 =
-  "2760ee4207c51344154116cb465138a99eb7214cd8c2fdf1486cd81994ce50e0";
+  "b8695cf98aa41c6b7d3803df45b62d244621d5d16fa16ba6a0a1a3f8fdf1cdc2";
 
 // Use the full path to the 'oura' executable
 const ouraPath = "/usr/local/bin/oura";

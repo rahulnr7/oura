@@ -1,15 +1,12 @@
-const {
-  Block,
-  hash_transaction,
-} = require("@emurgo/cardano-serialization-lib-nodejs");
-const fs = require("fs");
-const path = require("path");
+import {Block, hash_transaction} from "@emurgo/cardano-serialization-lib-nodejs"
+import fs from "fs"
+import path from "path"
 
 // Replace with Transaction Hash for which CBOR is needed
 const txnHash =
-  "00a5d69211a2c4c1ea2013206b8fc41c300cac76f84c4c026647d8a4d8afad92";
+  "4e8d04bfb5a91ab5c999e798d1fb7acd60339dd4a6769b69c4ac420391ed4a42";
 
-const strData = fs.readFileSync(path.join(__dirname, "output.txt")).toString();
+const strData = fs.readFileSync(path.join("output.txt")).toString();
 
 let cborHexFound = false;
 let extractedData = "";
